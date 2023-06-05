@@ -41,28 +41,6 @@ aula1.add(Alumno("cersey", "b", "cersey@correo.com"))
 aula1.add(Alumno("arya", "b", "arya@correo.com"))
 aula1.add(Alumno("jhon", "c", "jhon@correo.com"))
 
-
-
 aula1.listar()
 aula1.tos_palexamen()
 
-
-
-
-
-
-
-
-# alumnos[0].set_nota(7)
-# alumnos[1].set_nota(3)
-# alumnos[2].set_nota(4.95)
-# alumnos[3].set_nota(7.8)
-# alumnos[4].set_nota(4)
-# alumnos[5].set_nota(9.95)
-    
-# for morgan in alumnos:
-#     morgan.describe()
-
-# for alumno in alumnos:
-#     alumno.describe()
-#     alumno.convocar_examen()
