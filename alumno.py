@@ -2,7 +2,8 @@ from request_example import generate_name_and_email
 
 class Alumno:
 
-    def __init__(self):        
+    def __init__(self):
+        print("generating random user...")
         dict = generate_name_and_email()
         self.turno = "A"
         self.nombre = dict["fullname"]
@@ -24,7 +25,6 @@ class Alumno:
         if self.nota >= 5 and turno == self.turno:
             print(f"{self.correo}")
             print(f"    Estimado/a {self.nombre}, su nota media ha sido un {self.nota} ha sivo vd convocado al blablabla")
-
 
 if __name__ == "__main__":
     print(Alumno())

@@ -13,10 +13,10 @@ def generate_name_and_email():
     return my_user_data
 
 
-def main():
-    my_user = generate_name_and_email()[0]
-    print(f"NOMBRE: {my_user['nombre']}")
-    print(f"CORREO: {my_user['correo']}")
+# def main():
+#     my_user = generate_name_and_email()
+#     print(f"NOMBRE: {my_user['fullname']}")
+#     print(f"CORREO: {my_user['correo']}")
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
