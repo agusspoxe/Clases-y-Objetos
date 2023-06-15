@@ -37,5 +37,3 @@ class Aula:
     
     def set_profesor(self, profesor):
         self.profesor = profesor
-        for alumno in self.alumnos:
-            alumno.convocar_examen()

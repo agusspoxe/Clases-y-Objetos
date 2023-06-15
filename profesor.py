@@ -1,3 +1,4 @@
+
 import random
 class Profesor:
     def __init__(self, nombre, nota_minima, nota_maxima):
@@ -36,4 +37,4 @@ class Profesor:
         return f"{self.nombre} [{self.nota_minima}/{self.nota_maxima}]"
 
     def generar_nota(self) -> float:
-        return random.uniform(self.nota_minima, self.nota_maxima)
+         return random.uniform(self.nota_minima, self.nota_maxima)

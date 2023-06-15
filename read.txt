@@ -1,0 +1,17 @@
+
+# class Profesor:
+#     atributos:
+#     -nombre
+#     -nota minima min=0.0 max=4.0 excepcion si la nota maxima pasa de 4 "aviso"
+#     nota_maxima =6.0 max=10.0
+#     Metodos
+#     + generar_nota "random entre minima y maxima"
+#         Aula:
+#         setProfesor
+#         EXCEPTION: fallara al convocar examen, si no hay profesor o no hay alumnos
+#         MAIN()
+#         AL MENOS 5 AULAS
+#     1 sin alumnos
+#     1 sin profe
+# TODOS LOS ALUMNOS TURNO "A"
+# CONVOCAR A EXAMEN TODAS LAS AULAS

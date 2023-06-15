@@ -1,14 +1,17 @@
+from request_example import generate_name_and_email
+
 class Alumno:
 
-    def __init__(self, nombre, turno, correo):
-        self.nombre = nombre
-        self.correo = correo
-        self.turno = turno
-        self.nota = 0
+    def __init__(self):        
+        dict = generate_name_and_email()
+        self.turno = "A"
+        self.nombre = dict["fullname"]
+        self.correo = dict["correo"]
+        self.nota = None
 
     def __str__(self):
         buffer = []
-        buffer.append(f"Alumno: {self.nombre.ljust(8)}\n")
+        buffer.append(f"NOMBRE: {self.nombre}") #traer return de request?
         buffer.append(f" Turno: {self.turno}\n")
         buffer.append(f"  Nota: {self.nota}")
 
@@ -21,3 +24,7 @@ class Alumno:
         if self.nota >= 5 and turno == self.turno:
             print(f"{self.correo}")
             print(f"    Estimado/a {self.nombre}, su nota media ha sido un {self.nota} ha sivo vd convocado al blablabla")
+
+
+if __name__ == "__main__":
+    print(Alumno())
