@@ -54,7 +54,7 @@ for aula in aulas:
         print(e)
 
     try:
-        aula.convocar_examen("A")
+        aula.convocar_examen()
     except Exception as e:
         aula.listar()
         print(e)
