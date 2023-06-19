@@ -11,14 +11,15 @@ class Alumno(User):
         buffer = []
         buffer.append(f"Alumno: {self.nombre.ljust(8)}\n")
         buffer.append(f" Turno: {self.turno}\n")
-        buffer.append(f"  Nota: {self.nota}")
+        buffer.append(f"  Nota: {round(self.nota, 2)}")
 
         return "".join(buffer)
 
     def setNota(self, nota):
         self.nota = nota
+        
 
     def convocar_examen(self):
         if self.nota >= 5:
             print(f"{self.correo}")
-            print(f"    Estimado/a {self.nombre}, su nota media ha sido un {self.nota}")
+            print(f"    Estimado/a {self.nombre}, su nota media ha sido un {round(self.nota, 2)}")
