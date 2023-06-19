@@ -13,13 +13,15 @@ class GenerarNombre:
         return self.correo
 
     def generate_name_and_email(self):
+        print("requesting randomuser...")
+        
         uri = 'https://randomuser.me/api/?results=1'
         r = requests.get(uri)
         randomuser = r.json()
         user = randomuser["results"][0]
         return {
-        "nombre": f'{user["name"]["first"]} {user["name"]["last"]}',
-        "correo": user["email"]
+            "nombre": f'{user["name"]["first"]} {user["name"]["last"]}',
+            "correo": user["email"]
         }
 
 if __name__ == "__main__":

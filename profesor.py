@@ -1,4 +1,5 @@
 import random
+
 class Profesor:
     def __init__(self, nombre, nota_minima, nota_maxima):
 
